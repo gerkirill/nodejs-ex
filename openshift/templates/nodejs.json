@@ -208,6 +208,12 @@
                         "memory": "${MEMORY_LIMIT}"
                     }
                 },
+                "volumeMounts": [
+                  {
+                    "name": "${DATABASE_SERVICE_NAME}-data",
+                    "mountPath": "/var/lib/data"
+                  }
+                ],
                 "env": [
                 ],
                 "resources": {
